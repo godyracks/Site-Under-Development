@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars from appearing */
+            font-family: "Poppins", sans-serif;
+            position: relative; /* For positioning the content over the particles */
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Behind the content */
+        }
+        .content {
+            position: relative; /* Stack on top of particles */
+            max-width: 600px;
+            margin: 0 auto;
+            z-index: 2; /* In front of the particles */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Full height */
+            text-align: center;
+            color: #1c1c1c; /* Default text color for all */
+        }
+        h1 {
+            color: #1c1c1c; /* Corrected color code */
+        }
+        .logo {
+            margin-bottom: 20px;
+            width: 120px;
+            height: 120px;
+        }
+        .contact-info p, a {
+            color: #1c1c1c; /* Ensure contact info is visible */
+        }
+          .contact-info a {
+            color: #1c1c1c; /* Ensure contact info is visible */
+        }
+
+        @media (max-width: 641px){
+            .content {
+                width: 90%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div> <!-- Particles.js canvas -->
+    <div class="content">
+        <div class="logo">
+            <img src="./chang logo.png" alt="Chang Adventure Logo" style="max-width: 100%; height: auto;">
+        </div>
+        <h1>Site Under Development</h1>
+        <p>Sorry for the inconvenience, Chang Adventure website (<a href="https://changadventure.co.ke" target="_blank">changadventure.co.ke</a>) is currently under development.</p>
+        <p>We are currently working hard to bring you an awesome experience! Please check back later.</p>
+        <p>Thank you for your patience!</p>
+        <div class="contact-info">
+            <p>Contact us at: <a href="mailto:info@changadventure.co.ke" style="color: #1c1c1c;">info@changadventure.co.ke</a></p>
+            <p>WhatsApp: <a href="https://wa.me/254105119485" target="_blank" style="color: #1c1c1c;">+254 105 119485</a></p>
+        </div>
+    </div>
+
+    <!-- Include Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#00BFFF" // Light blue color for particles
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00BFFF", // Matching the particle color
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
